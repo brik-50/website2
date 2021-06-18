@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<title>slogan.ma</title>
+	<link rel="stylesheet" type="text/css" href="home.css">
+</head>
+<body>
+<table width="100%">
+	<tr height="25px"></tr>
+	<tr>
+		<td width="5%"></td>
+		<td width="35%"><h3>achetez sur SLOGAN</h3></td>
+
+		<td width="20%">
+			<button type="button" class="btn btn-outline-warning " onclick="document.location='home.html'" id="btn_home" >home</button>
+			<button type="button" class="btn btn-outline-warning">se connecter</button>
+			<button type="button" class="btn btn-outline-warning">s'inscrire</button>
+			<button type="button" class="btn btn-outline-warning">panier</button>
+			
+		</td>
+	</tr>
+	<tr height="15px"></tr>
+</table>
+<table width="100%">
+<tr>
+	<td width="5%"></td>
+	<td width="20%" >
+		<img src="logo.jpg" width="150px" height="120px">
+	</td>
+	<td width="60%">
+		<input type="text" name="search" size="60" class="search" placeholder="  chercher un produit,">
+		<button type="button" id="chercher" class="btn btn-outline-warning">chercher</button>
+	</td>
+</tr>	
+</table>
+<table border=0 width="100%">
+	
+	<tr height="200px">
+		<td width="5%"></td>
+		<td width="15%"  style="background-color: #BBBBBB "><center>
+			<br><a href="" ><h4>PC</h4></a><br><br><hr>
+			<a href="" ><h4>VEDIO</h4></a><br><br><hr>
+			<a href=""><h4>DIVERS</h4></a><br></center>
+
+		</td>
+		<td width="5%"></td>
+		
+		<td width="50%">
+			
+				<img name="diapo" height="302px" width="100%">
+				<script type="text/javascript">
+					var images=[];
+					images[0]="asus.jpg";
+					images[1]="souris.jpg";
+					images[2]="poste.jpg";
+					var i=0;
+					var time=2000;
+					function changeimage(){
+						document.diapo.src=images[i];
+						if(i<images.length-1)
+							i++;
+						else
+							i=0
+						setTimeout("changeimage()",time);
+					}
+					window.onload=changeimage;
+				</script>
+			
+		</td>
+		<td width="25%">
+			
+		</td>
+	</tr>
+</table>
+<table width="100%">
+	<tr height="200px">
+		<td width="5%"></td>
+		<td width="19%"><img src="clavier.jpg" width="250px" height="150px"></td>
+		<td width="19%"><img src="tv.jpg" width="250px" height="150px"></td>
+		<td width="19%"><img src="casque.jpg" width="250px" height="150px"></td>
+		<td width="19%"><img src="ecouteur.jpg" width="250px" height="150px"></td>
+		<td width="19%"><img src="hp.jpg" width="250px" height="150px"></td>
+	</tr>
+</table>
+
+
+
+
+
+
+</body>
+</html>

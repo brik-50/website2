@@ -1,0 +1,15 @@
+.search{
+	padding-bottom: 6px;
+	padding-top:2px; 
+
+}
+body{background-color: black;}
+
+h3{
+	color:#BBBBBB;
+}
+h4{
+	color:white;
+}
+button:hover{background-color:orange;}
+button:focus{background-color:yellow;}
